@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login Page"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_heading"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext"
+        android:textColorHint="@android:color/white"
+        android:hint="Enter Your Email"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_email"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Your Password"
+        android:textColorHint="@android:color/white"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext"
+        android:text="Login"
+        android:padding="20dp"/>
+
+
+    <TextView
+        android:id="@+id/register_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Don't have an account?register here "
+        android:layout_below="@+id/login_btn"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"/>
+
+
+
+</RelativeLayout>

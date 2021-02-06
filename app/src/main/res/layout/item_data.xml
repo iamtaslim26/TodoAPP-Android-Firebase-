@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    android:layout_margin="7dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9 September"
+                android:padding="6dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#8A2BE2"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/txttitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:padding="6dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/txtnote1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:padding="6dp"
+                android:layout_below="@+id/txttitle1"
+                android:paddingBottom="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
